@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table{
+        opacity: 25%;
+        margin-left: 35%;margin-top: 2%; background-color: white; border: 2px solid orange; border-radius: 1%; 
+      }
+      
+      table:hover{
+        opacity: 90%;
+
+      }
+    </style>
+    <script language="javascript">
+       function ok()
+      {
+        console.log("hiiii");
+      }
+    function validate()
+    {
+     var iderr=passerr=nameerr=adderr=counterr=ziperr=emailerr=malerr=engerr=txterr=true;
+    
+      var id = document.getElementById("userid");
+      var iderr = document.getElementById("demo1");
+      if (id.value =="" || id.value.length<5 || id.value.length>12)
+       {iderr.style.color="red";
+       iderr.innerHTML="Required and must be of length 5 to 12.";
+       iderr=false;
+       }
+      else
+      iderr.innerHTML="";
+    
+      var pass = document.getElementById("userpw");
+      var passerr = document.getElementById("demo2");
+      if (pass.value =="" || pass.value.length<7 || pass.value.length>12)
+       {passerr.style.color="red";
+       passerr.innerHTML="Required and must be of length 7 to 12.";
+       passerr=false;
+       }
+      else
+      passerr.innerHTML="";
+    
+      var name = document.getElementById("usernm");
+      var nameerr  = document.getElementById("demo3");
+      var letters = /^[A-Za-z]+$/;
+      if(name.value.match(letters) )
+      nameerr.innerHTML="";
+      else
+       {nameerr.style.color="red";
+       nameerr.innerHTML="Required and alphabets only";
+       nameerr=false;
+       }
+    
+      var add= document.getElementById("useradd");
+      var adderr = document.getElementById("demo4");
+      if (add.value =="")
+       {adderr.style.color="red";
+       adderr.innerHTML="optional.";
+       adderr=false;
+       }
+      else
+      adderr.innerHTML="";
+    
+      var count = document.getElementById("country");
+      var counterr = document.getElementById("demo5");
+      if (count.value =="please select a country")
+       {counterr.style.color="red";
+       counterr.innerHTML="Required. Must select a country.";
+       counterr=false;
+       }
+      else
+      counterr.innerHTML="";
+    
+      var zip = document.getElementById("zipcode");
+      var ziperr = document.getElementById("demo6");
+      if (isNaN(zip.value) == true || zip.value=="" || zip.value.length !=6)
+       {ziperr.style.color="red";
+       ziperr.innerHTML="Required. Must be numeric only.";
+       ziperr=false;
+       }
+      else
+      ziperr.innerHTML="";
+    
+    var email= document.getElementById("email");
+    var emailerr = document.getElementById("demo7");
+    
+       //characters filtered out = ! # $ % & ‘ * + – / = ? ^ ` . { | } ~ 
+      var mailformat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (mailformat.test(email.value) == false)
+       {emailerr.style.color="red";
+       emailerr.innerHTML="Required. Must be a valid email.";
+       emailerr=false;
+       }
+      else
+      emailerr.innerHTML="";
+    
+    //  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+      var mal = document.getElementById("m");
+      var malerr = document.getElementById("demo8");
+      if (mal.checked == false)
+       { 
+          var femal = document.getElementById("f");
+          if (femal.checked == false)
+           {malerr.style.color="red";
+           malerr.innerHTML="Required.";
+           maleerr=false;
+           }
+          else
+          malerr.innerHTML="";
+        }
+      else
+      malerr.innerHTML="";
+    
+      var eng = document.getElementById("e");
+      var engerr = document.getElementById("demo9");
+      if (eng.checked == false)
+       { 
+          var neng = document.getElementById("ne");
+          if (neng.checked == false)
+           {engerr.style.color="red";
+           engerr.innerHTML="Required.";
+           engerr=false;
+           }
+          else
+          engerr.innerHTML="";
+        }
+      else
+      engerr.innerHTML="";
+    
+      var txt= document.getElementById("tx");
+      var txterr = document.getElementById("demo10");
+      if (txt.value=="")
+       {txterr.style.color="red";
+       txterr.innerHTML="Optional.";
+       txterr=false;
+       }
+      else
+      txterr.innerHTML="";
+      if(iderr=passerr=nameerr=adderr=counterr=ziperr=emailerr=malerr=engerr=txterr=true)
+      {
+      var curdate = new Date();
+    curdate.setMonth(curdate.getMonth() + 6);
+    var cookie_date  = curdate.toUTCString();
+    final_cookie = "Your id=" + encodeURIComponent(id) + "Your password=" + encodeURIComponent(pass) + ";expires_on = " + cookie_date; 
+    document.cookie = final_cookie;
+    alert(final_cookie); 
+      }
+     
+    }//function over
+    </script>
+    </head>
+    <body style=" background: url('1129946.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;" >
+    <form>
+    <table >
+    <tr>
+      <td align="center" colspan="3"><h1 style="background-color: aliceblue; padding: 3%;"> Login form </h1></td>
+    </tr>
+    
+    <tr>
+      <td align="right">User id :</td>
+      <td><input type="text" id="userid"> </td>
+      <td><p id="demo1"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    <tr>
+      <td align="right">Password :</td>
+      <td><input type="password" id="userpw"> </td>
+      <td><p id="demo2"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Name :</td>
+      <td><input type="text" id="usernm" size=40> </td>
+      <td><p id="demo3"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Address :</td>
+      <td><input type="text" id="useradd" size=40> </td>
+      <td><p id="demo4"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Country :</td>
+      <td><select id="country">
+                <option value="please select a country">please select a country</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+            </select>
+     </td>
+      <td><p id="demo5"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Zipcode :</td>
+      <td><input type="text" id="zipcode"> </td>
+      <td><p id="demo6"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Email :</td>
+      <td><input type="text" id="email"> </td>
+      <td><p id="demo7"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Sex :</td>
+      <td><input type="radio" name="gender" id="m" value="male" checked>Male
+             <input type="radio" name="gender" id="f" value="female">Female
+     </td>
+      <td><p id="demo8"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right">Language :</td>
+      <td> <input type="checkbox" name="language" id="e">English
+              <input type="checkbox" name="language" id="ne">Non English
+      </td>
+      <td><p id="demo9"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td align="right" valign="top">About : </td>
+      <td> <textarea id="tx" rows="5" cols="50" value=""></textarea>
+      </td>
+      <td><p id="demo10"></p></td>
+    </tr>
+    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+    
+    <tr>
+      <td></td>
+      <td style="padding-left: 50px;"><a href="./Index.html"><button type="button" onclick="validate()" style="background-color: #f4a950;padding: 10px 90px 10px 90px; border-radius: 5px;">Submit</button></a>
+    </td>
+    </tr>
+    
+    </table>
+    </form> 
+    </body>

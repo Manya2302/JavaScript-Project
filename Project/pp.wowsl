@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>9.0</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>true</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>22</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>pp</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>lines</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>430</ImageHeight>
+            <ImageQuality>80</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/easy/</ImageTemplate>
+            <ImageTemplateName>Easy</ImageTemplateName>
+            <ImageWidth>960</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>E:/College/WDT-2/Project/index(1).html</PublishFileName>
+            <PublishIndex>index(1).html</PublishIndex>
+            <PublishPath>E:/College/WDT-2/Project</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>true</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#404449</TemplateColor>
+            <TemplateFont>Exo 2</TemplateFont>
+            <TemplateName>easy</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>E:/College/WDT-2/CARS/Rolls-Royce.jpg</url>
+                <title>Rolls-Royce</title>
+                <filesize>325828</filesize>
+            </Image>
+            <Image>
+                <url>E:/College/WDT-2/CARS/Lamborghini.jpg</url>
+                <title>Lamborghini</title>
+                <filesize>1266594</filesize>
+            </Image>
+            <Image>
+                <url>E:/College/WDT-2/CARS/supramk4.jpg</url>
+                <title>supramk4</title>
+                <filesize>382755</filesize>
+            </Image>
+            <Image>
+                <url>E:/College/WDT-2/CARS/Mustang.jpg</url>
+                <title>Mustang</title>
+                <filesize>3853247</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
